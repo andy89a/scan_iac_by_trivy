@@ -42,7 +42,7 @@ jobs:
           scan-ref: '/andy89a/tfsamle/'
           ignore-unfixed: true
           severity: 'CRITICAL,HIGH'
-          security-checks: 'vuln'
+          #security-checks: 'vuln'
           format: 'json'
           output: 'trivy-result.json'
           exit-code: '1'
