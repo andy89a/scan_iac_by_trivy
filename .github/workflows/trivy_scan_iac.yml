@@ -39,7 +39,7 @@ jobs:
           #image-ref: '${{ secrets.DOCKERHUB_IP }}/test_project/${{ inputs.IMAGE_NAME }}' 
           #vuln-type: 'os,library'
           #scan-ref 가능할까?
-          scan-ref: 'https://github.com/andy89a/tfsamle/'
+#          scan-ref: 'https://github.com/andy89a/tfsamle/'
           ignore-unfixed: true
           severity: 'CRITICAL,HIGH'
           #security-checks: 'vuln'
