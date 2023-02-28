@@ -56,11 +56,11 @@ jobs:
       #     chmod a+x /usr/local/bin/jq
 
 
-      # - name: check trivy result
-      #   id: result
-      #   shell: bash
-      #   run: |
-      #     cat trivy-result.json
+      - name: check trivy result
+        id: result
+        shell: bash
+        run: |
+          cat trivy-result.json
       #     echo "OS Check"
       #     os_info=`cat trivy-result.json | jq 'try .Results[0].Vulnerabilities[]'`
       #     library_info=`cat trivy-result.json | jq 'try .Results[1].Vulnerabilities[]'`
