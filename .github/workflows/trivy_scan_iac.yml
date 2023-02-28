@@ -34,7 +34,7 @@ jobs:
       - name: Run Trivy vulnerability scanner in IaC mode
         uses: aquasecurity/trivy-action@master
         with:
-          scan-type: 'config'
+          scan-type: 'config, secret'
           hide-progress: false
           #image-ref: '${{ secrets.DOCKERHUB_IP }}/test_project/${{ inputs.IMAGE_NAME }}' 
           #vuln-type: 'os,library'
